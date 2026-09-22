@@ -1,4 +1,4 @@
-package org.example;
+package factoryMethod;
 
 public class NotificacaoEmail implements INotificacao {
     public String enviar() {

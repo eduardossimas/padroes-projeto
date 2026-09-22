@@ -1,4 +1,4 @@
-package org.example;
+package factoryMethod;
 
 public class NotificacaoFactory {
     public static INotificacao obterNotificacao(String notificacao) {
@@ -6,7 +6,7 @@ public class NotificacaoFactory {
         Object objeto = null;
 
         try {
-            classe = Class.forName("org.example.Notificacao" + notificacao);
+            classe = Class.forName("factoryMethod.Notificacao" + notificacao);
             objeto = classe.newInstance();
         } catch (Exception e) {
             throw new IllegalArgumentException("Notificação inexistente");

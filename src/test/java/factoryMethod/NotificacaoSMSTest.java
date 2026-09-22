@@ -1,4 +1,4 @@
-package org.example;
+package factoryMethod;
 
 import org.junit.jupiter.api.Test;
 
